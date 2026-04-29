@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <h2>
+    Welcome <span id="myEmail"></span>
+  </h2>
+
+  <button class="logout-btn" onclick="logout()">
+    Logout
+  </button>
+</div>
+
+<hr>
+
+<!-- MAIN CONTAINER -->
+<div class="container">
+
+  <!-- USERS -->
+  <div class="section">
+    <h3>👥 All Users</h3>
+    <div id="users" class="list"></div>
+  </div>
+
+  <!-- REQUESTS -->
+  <div class="section">
+    <h3>📩 Incoming Requests</h3>
+    <div id="requests" class="list"></div>
+  </div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

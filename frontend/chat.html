@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="chat-header">
+  <button onclick="goBack()">⬅</button>
+  <h2>Chat</h2>
+</div>
+
+<!-- STATUS -->
+<h3 id="status" class="status"></h3>
+
+<!-- CHAT BOX -->
+<div class="chat-box" id="box"></div>
+
+<!-- INPUT AREA -->
+<div class="chat-input">
+  <input id="msg" placeholder="Type message...">
+  <button onclick="send()">Send</button>
+</div>
+
+<!-- SOCKET -->
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+
+<!-- SCRIPT -->
+<script src="js/chat.js"></script>
+
+<script>
+function goBack() {
+  window.location.href = "dashboard.html";
+}
+</script>
+
+</body>
+</html>
